@@ -1,0 +1,180 @@
+@import "variables.scss";
+.blur-div{
+    background-color: red;
+    z-index:1000;
+    position: absolute;
+    width:100vw;
+    height:115vh;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(-6px);
+
+}
+
+.login-container{
+    font-family: Helvetica, sans-serif;
+    width:500px;
+    min-height:50%;
+    @include display;
+    align-items: flex-start;
+    justify-content:flex-start;
+    position: absolute;
+    flex-direction: column;
+    background-color: #fff;
+    z-index: 1000;
+    box-shadow: 4px 7px 7px 0px #00000042;
+    transition: 400ms;
+    top:12.5%;
+    left:30%;
+    &:hover{
+        transform: scale(1.03);
+        cursor: pointer;
+    }
+}
+.header-title{
+    width:100%;
+    height:12vh;
+    background-color:#1dd1aa ;
+    @include display;
+    justify-content: space-between;
+    h2{
+        margin-left:1rem;
+        font-size:30px;
+
+    }
+    #times{
+        margin-right:1rem;
+        margin-top:-0.5rem;
+        color:#fff;
+        font-size:30px;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}
+.register-btn{
+    width:50%;
+    height:8vh;
+    position: inherit;
+    top:6rem;
+    left:8rem;
+    @include display;
+    justify-content:space-around ;
+    button{
+        width:120px;
+        height:80%;
+        border:none;
+        border-radius:2px;
+
+        &:hover{
+            cursor:pointer;
+        }
+        &:active{
+            transform: translateY(2px);
+        }
+
+    }
+    .sign-btn{
+
+        &:focus{
+            background-color: #1dd1aa;
+            color:#333;
+        }
+      
+    }
+    .reg-btn{
+    
+        &:focus{
+           background-color: #1dd1aa;
+           color:#fff;
+           cursor: pointer;
+        }
+    }
+  
+
+}
+
+.mail-password-sec{
+    width:450px;
+    min-height:100%;
+    z-index: 1000;
+    @include display;
+    margin-top:5rem;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin-left:1rem;
+    flex-direction: column;
+
+    
+
+    input{
+        width:80%;
+        height:6vh; 
+        padding-left:1rem;
+        margin-top:0.4rem;
+        margin-bottom:2rem;
+        outline: 0;
+        border:0.1px solid rgba(181, 181, 181,0.4);
+
+
+    }
+    #log-btns{
+  
+      
+        width:55%;
+        margin-top:-1rem;
+        margin-bottom: 1rem;
+    }
+    
+}
+.register-here{
+    margin-left:1rem;
+
+    
+    b:hover{
+     cursor: pointer;
+    }
+}
+
+#update-sec{
+    width:450px;
+    min-height:100%;
+    z-index: 1000;
+    @include display;
+    margin-top:5rem;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin-left:1rem;
+    flex-direction: column;
+    margin-top:1rem;
+      
+
+    input{
+        width:80%;
+        height:6vh; 
+        padding-left:1rem;
+        margin-top:0.4rem;
+        margin-bottom:1rem;
+        outline: 0;
+        border:0.1px solid rgba(181, 181, 181,0.4);
+        color:rgb(63, 63, 63);
+
+    }
+    #log-btns{   
+        width:55%;
+        height:7vh;
+        margin-top:1rem;
+        margin-bottom: 1rem;
+        border:none;
+        background-color: #1dd1aa;
+        color:#333;
+        transition: 300ms;
+        box-shadow: 4px 7px 7px 0px #00000042;
+        &:hover{
+            cursor:pointer;
+            background-color: #fff;
+            color:#1dd1aa;
+            transform: scale(1.03);
+        }   
+    }
+
+}

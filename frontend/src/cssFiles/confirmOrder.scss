@@ -1,0 +1,195 @@
+@import "variables.scss";
+.order-confirm-container{
+    width:100%;
+    min-height:160vh;
+    font-family: Helvetica, sans-serif;
+    justify-content: center;
+    display: flex;
+
+  
+}
+.summary-container{
+    margin-top:5rem;
+    position: absolute;
+    width:50%;
+    min-height:180vh;
+    background-color: #fff;
+    box-shadow:0px 6px 18px -9px rgba(0, 0, 0, 0.75);
+    display: flex;
+    flex-direction: column;
+
+
+}
+.success-msg{
+    height:30vh;
+    background-color: #1dd1aa;
+    @include orderSummary;
+    h1{
+        margin-top:1rem;
+    }
+    p{
+        margin-top:-0.2rem;
+    }
+    i{
+        color:White;
+        margin-top:2rem;
+        font-size:3.5em;
+        z-index: 1000;
+
+    }
+    h6{
+        margin-top:0.5rem;
+        font-size:16px;
+    }
+}
+.expected-date{
+    height:20vh;
+    background-color: rgb(221, 221, 221);
+    @include orderSummary;
+
+}
+.shipping-summery{
+    height:26vh;
+    width:93.5%;
+    display: flex;
+    flex-direction: column;
+    padding-left:3rem;
+    margin-top:1rem;
+    p{
+        margin-top:-0.5rem;
+
+
+    }
+
+}
+.order-detail{
+    @include orderSummary;
+    align-items: flex-start;
+    margin-left:3rem;
+  
+  
+}
+.order-list{
+    width:90%;
+    min-height:12vh;
+    display: flex;
+    align-items: center;
+    background-color: rgb(237, 237, 237);
+    border:0.1px solid rgba(137, 135, 135, 0.2);
+    .order-img{
+        width:100px;
+        height:100%;
+        border-right:0.1px solid  rgba(137, 135, 135, 0.2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       #order-prod{
+           width:80%;
+           height:80%;
+           margin-left:0.5rem;
+       }
+    }
+    p{
+        margin-top:-0.3rem;
+    }
+    .order-name{
+        width:300px;
+        height:100%;
+        @include display;
+        flex-direction: column;
+        border-right:0.1px solid rgba(137, 135, 135, 0.2);;
+        
+    }
+    .order-qty{
+        width:100px;
+        height:100%;
+        @include display;
+        flex-direction: column;
+        border-right:0.1px solid rgba(137, 135, 135, 0.2);
+    }
+    .order-price{
+        width:143px;
+        height:100%;
+        @include display;
+        flex-direction: column;
+        border-right:0.1px solid rgba(137, 135, 135, 0.2);
+    }
+
+
+}.order-total-container{
+    width:90%;
+    min-height:12%;
+    margin-top:1rem;
+    margin-left:3rem;
+    @include display;
+    align-items: flex-start;
+    flex-direction: row;
+    border:0.1px solid rgba(196, 196, 196,0.4);
+    justify-content: space-between;
+    .order-list-subtotal{
+        justify-content: flex-start;
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        margin-left:2rem;
+        text-align: left;
+    }
+    .order-money-subtotal{
+        justify-content: flex-end;
+        align-items: flex-end;
+        display: flex;
+        flex-direction: column;
+        margin-right:3rem;
+       text-align: right;
+    }
+    
+}
+.main-total{
+    width:90%;
+    height:7vh;
+    margin-left:3rem;
+    @include display;
+    align-items: flex-start;
+    flex-direction: row;
+    border:0.1px solid rgba(196, 196, 196,0.4);
+    justify-content: space-between;
+    h4{
+        margin-left:2rem;
+        margin-top: 0.5rem;
+    }
+    h3{
+        margin-right:3rem;
+        margin-top: 0.5rem;
+    }
+}
+
+.home-link{
+    width:150px;
+    height:50px;
+    border:none;
+    position: absolute;
+    right:1.4rem;
+    bottom:1rem;
+    color:#333;
+    background-color: #1dd1a1;
+    &:hover{
+        cursor: pointer;
+   
+       color:#333;
+    }
+}
+.order-link{
+    width:150px;
+    height:50px;
+    border:none;
+    position: absolute;
+    left:12rem;
+    bottom:1rem;
+    color:#333;
+    background-color: #1dd1a1;
+    &:hover{
+        cursor: pointer;
+   
+       color:#333;
+    }
+}

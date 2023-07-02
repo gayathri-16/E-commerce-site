@@ -1,0 +1,241 @@
+
+@import "variables.scss";
+.cart-items-container{
+    font-family: Helvetica, sans-serif;
+    width:100%;
+    height:100vh;
+    position: relative;
+    margin:auto;
+    margin-top:7rem;
+
+
+}
+
+.cart-info{
+  width:65%;
+  height:5vh;
+  border:0.1px solid  rgba(197, 195, 195,0.5);
+  position: absolute;
+  margin-left:5rem;
+  margin-top:5rem;
+  display: flex;
+  align-items: center;
+  font-size:14px;
+  justify-content: space-around;
+  &:hover{
+    cursor:pointer;
+  }
+  .cost-detail{
+
+    width:50%;
+    height:100%;
+    margin-right:-7rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+}
+.itrrate-item{
+    width:65%;
+    font-size:14px;
+    height:20vh;
+    position:absolute;
+    margin-top:7.2rem;
+    margin-left:5rem;
+
+
+}
+
+#collection{
+    
+    width:100%;
+    height:20vh;
+    border:0.1px solid  rgba(197, 195, 195,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    .goods{
+
+        width:45%;
+        height:150px;
+        z-index:100;
+        display: flex;
+        align-items:center;
+        justify-content: space-around;
+       
+        img{
+            width:90px;
+            height:100px;
+            border-radius: 5px;
+    
+        }
+        i{
+            color:gray;
+            &:hover{
+                color:#333;
+            }
+        }
+    }
+
+#item-modify{
+    width:50%;
+    height:150px;
+    z-index:100;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+
+   .cost{
+    margin-left:rem;
+   }
+
+.modify-product-btn{
+    width:100px;
+    height:50px;
+    @include displayitems;
+    margin-left:2rem;
+    border:0.1px solid gray;
+    background-color: rgb(233, 233, 233);
+    
+   button{
+    width:30px;
+    height:100%;
+    border:none;
+    border-right:0.1px solid gray;
+    background-color:#fff;
+    &:hover{
+        cursor: pointer;
+    }
+   }
+   .increment{
+    border-left:0.1px solid gray;
+   }
+
+
+}
+     
+  }
+    
+}
+
+
+.cart-total{
+    width:27%;
+    position:absolute;
+    height:75vh;
+    right:0;
+    border:0.1px solid rgba(177, 177, 177,0.4);
+    margin-top:5rem;
+    background-color: #f1f2f6;
+    font-size:14px;
+    &:hover{
+        cursor: pointer;
+    }
+    h2{
+      text-align: center;
+    }
+    .cart-section{
+        width:85%;
+        height:72%;
+        margin:auto;
+        border:0.1px solid rgba(177, 177, 177,0.4);
+        background-color: #fff; 
+        box-shadow: -3px 7px 7px -5px #00000042;
+        h3{
+            margin-left:1.5rem;
+        }
+        .sub-total{
+            width:100%;
+            height:10vh;
+            @include displayitems;
+            border-bottom:0.1px solid rgba(177, 177, 177,0.4);
+           
+            .sub-money{
+                margin-right:1rem;
+            }
+        }
+        .shipping{
+            @include displayitems;
+            align-items: flex-start;
+            width:100%;
+            height:16vh;
+            border-bottom:0.1px solid rgba(177, 177, 177,0.4);
+           
+            .shipped-location{
+               @include position;
+            }
+            p{
+                margin-bottom: -0.3rem;
+                margin-right:1rem;
+
+            }
+            input{
+                outline: 0;
+                &:hover{
+                    cursor: pointer;
+                }
+                
+            }
+            h4{
+                margin-left:1.5rem;
+                margin-top:0.8rem;
+               }
+          
+        }
+       
+          .shipping-add{
+            width:100%;
+            @include displayitems;
+            height:17vh;
+            border-bottom:0.1px solid rgba(177, 177, 177,0.4);
+          }
+          h4{
+            margin-top:-1rem;
+            line-height: 1.4rem;
+            margin-left:1.5rem;
+          }
+           .address{
+            @include position;
+            margin-right:1rem;
+            h5{
+                margin-bottom: -1rem;
+            }
+           }
+
+           .total-amount{
+            width:100%;
+            height:11vh;
+            @include display;
+            justify-content: space-between;
+            border-bottom:0.1px solid rgba(177, 177, 177,0.4);
+             h2{
+                margin-right: 1rem;
+             }   
+        }
+
+
+    }
+
+    .pro-to-checkout{
+        width:85%;
+        margin: auto;
+        height:7vh;
+        margin-top:0.5rem;
+        background-color: #333;
+        button{
+            width:100%;
+            height:100%;
+            border:none;
+            color:#fff;
+            background-color: transparent;
+            &:hover{
+                cursor: pointer;
+               background-color: #1dd1a1;
+               color:#333;
+            }
+        }
+       }
+
+}
